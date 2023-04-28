@@ -5,7 +5,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
 ]
 
 urlpatterns += i18n_patterns(
