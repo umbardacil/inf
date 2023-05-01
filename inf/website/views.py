@@ -1,6 +1,5 @@
-from django.shortcuts import HttpResponse
-from django.utils.translation import gettext as _
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse(_("Hello, world. You are on INF (future) website."))
+    return render(request, "website/index.html")
